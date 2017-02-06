@@ -1,0 +1,90 @@
+
+
+
+
+
+/* MAIN BODY CONTAINERS   ====================*/
+
+.NEW {
+  @include outer-container(100%);
+
+
+}
+
+
+
+
+.ABOUTBLOCK {
+  @include span-columns(12);
+  background-color: $color-blue;
+}
+
+
+
+.AUDIOBLOCK {
+  @include span-columns(12);
+  background-color: #FFFFFF;
+}
+
+
+.SHOPBLOCK {
+  @include span-columns(12);
+  background-color: $color-green;
+}
+
+.TWITBLOCK {
+  @include span-columns(12);
+  
+  background-color: $color-white;
+}
+
+.CONTACTBLOCK {
+  @include span-columns(12);
+  background-color: $color-pink;
+}
+
+
+
+
+
+
+
+
+.SINGLE_PLAYER {
+  margin-left: -10px; 
+  margin-top: 10px;
+  color: #76603D;
+
+  @media #{$brk-narrow} {
+      color: #39cdfc;
+  }
+
+}
+
+
+.SONGWRAP {
+   margin-top: 70px;
+   margin-left: 35px;
+   margin-bottom: 35px;
+   color: black;
+   font-size: 20px;
+   font-family: 'Permanent Marker', sans-serif;
+  font-size: 25px;
+  display: block;
+
+}
+
+
+form {
+  @include span-columns(12);
+}
+
+
+
+
+
+
+
+
+
+

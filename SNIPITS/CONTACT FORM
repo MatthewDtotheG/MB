@@ -1,0 +1,183 @@
+
+/* CONTACT FORM =============== */
+
+<--!
+
+<form id="ajax-contact" method="post" action="mailer.php">
+        
+        <div class="FORM1">
+          MESSAGE*<br>
+          <textarea id="message" name="message" class="MESSAGE" required></textarea><br>
+        </div>
+        
+        <div class="FORM0">
+          NAME*<br>      
+          <input type="text" id="name" name="name" required><br>
+          E-MAIL*
+          <input type="text" id="email" name="email" required><br>
+          <input class="SEND" type="submit" value="SEND">
+        </div>
+</form>
+
+-->
+
+/*
+
+.SEND {
+  color: black;
+  border: 1px solid black;
+  padding: 10px 84px;
+  margin: 35px 0px;
+  border-radius: 0px;
+
+  @media #{$brk-narrow} {
+    padding: 10px 89px;
+  }
+
+  @media #{$brk-small} {
+    
+    text-align: center;
+    float: none;
+  }
+
+  }
+
+.SEND {
+    background-color: $color-prim;
+    box-sizing: none;
+    font-size: 20px;
+    font-family: $stack-muli;
+    font-weight: 300;
+    -webkit-appearance: none;
+
+    @media #{$brk-narrow}{
+    font-size: 16px;}
+
+    @media #{$brk-small} {
+    @include span-columns(12);
+  }
+}
+
+
+form {
+  
+  margin-top: 400px;
+  margin-bottom: 400px;
+  font-size: 20px;
+  font-family: $stack-muli;
+  -webkit-appearance: none;
+
+  @media #{$brk-narrow}{
+    font-size: 16px;}
+}
+
+input, 
+textarea {
+  background-color: $color-prim;
+  border: 1px solid black;
+  padding: 10px;
+  padding-left: 5px;
+  margin: 20px 0px;
+  font: 20px $stack-muli;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  -webkit-appearance: none;
+}
+
+
+
+input:focus,
+textarea:focus {
+    outline: none !important;
+    border:1px solid black;
+    border-color: black;
+    box-shadow: black;
+    background-color: $color-sec;
+    color: $color-text-light;
+    border-color: none;
+}
+
+
+
+textarea {
+  height: 187px;
+}
+
+
+#{$all-text-inputs} {
+  background-color: $color-prim;
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+
+.SEND:hover {
+  background-color: $color-sec;
+  color: $color-text-light;
+  font-weight: 600;
+}
+
+*/
+
+
+
+
+<?php
+    // My modifications to mailer script from:
+    // http://blog.teamtreehouse.com/create-ajax-contact-form
+    // Added input sanitizing to prevent injection
+
+    // Only process POST reqeusts.
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get the form fields and remove whitespace.
+        $name = strip_tags(trim($_POST["name"]));
+        $name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $message = trim($_POST["message"]);
+
+        // Check that data was sent to the mailer.
+        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            // Set a 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+            exit;
+        }
+
+        // Set the recipient email address.
+        // FIXME: Update this to your desired email address.
+        $recipient = "andytwolff@gmail.com";
+
+        // Set the email subject.
+        $subject = "New contact from $name";
+
+        // Build the email content.
+        $email_content = "Name: $name\n";
+        $email_content .= "Email: $email\n\n";
+        $email_content .= "Message:\n$message\n";
+
+        // Build the email headers.
+        $email_headers = "From: $name <$email>";
+
+        // Send the email.
+        if (mail($recipient, $subject, $email_content, $email_headers)) {
+            // Set a 200 (okay) response code.
+            http_response_code(200);
+            echo "Thank You! Your message has been sent.";
+        } else {
+            // Set a 500 (internal server error) response code.
+            http_response_code(500);
+            echo "Oops! Something went wrong and we couldn't send your message.";
+        }
+
+    } else {
+        // Not a POST request, set a 403 (forbidden) response code.
+        http_response_code(403);
+        echo "There was a problem with your submission, please try again.";
+    }
+?>

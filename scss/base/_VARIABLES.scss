@@ -1,0 +1,41 @@
+/* VARIABLES */
+
+
+/* Descriptive color variables  #e5e5e5;  #F6F6F6*/
+
+
+
+$white			:	#F4F4F2;
+$blue			:   #39CDFC;
+$green			:	#AFFF9C;
+$pink			: 	#F4989D;
+$brown			:	#76603D;
+$red			:	#F84406;
+
+/* Functional color variabels */
+
+
+$color-white		:	$white;
+$color-blue			: 	$blue;
+$color-green		: 	$green;
+$color-pink			: 	$pink;
+$color-brown		: 	$brown;
+$color-red			: 	$red;
+
+/* FONT variabels */
+
+$stack-sans-serif	:	sans-serif;
+$stack-open-sans	:	'Open Sans', $stack-sans-serif;
+$stack-muli			:	'Muli', $stack-sans-serif;
+
+
+
+
+/* MEDIA QUERY BREAKPOINTS */
+
+$brk-xsmall  :	'(max-width: 320px)';
+$brk-small  :	'(max-width: 550px)';
+$brk-narrow	:	'(max-width: 768px)';
+$brk-fix	:	'(max-width: 808px)';
+$brk-wide	:	'(max-width: 1124px)';
+$brk-maxwidth	: '(max-width: 1550px)';

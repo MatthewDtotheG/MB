@@ -1,0 +1,76 @@
+/* ICONS */
+
+.arrow {
+
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 80px;
+  width: 100px;
+  height: 100px;
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 48%;
+  transition: all .5s ease-in-out;
+  transform: translateY(0px) rotate(90deg);
+}
+
+
+.arrow:hover,
+.arrow:visited {
+  color: white;
+  transform: translateY(40px) rotate(90deg);
+}
+
+
+.PLAY {
+   float: right;
+   margin-left: 40px;
+   width: 30px;
+   height: 30px;
+}
+
+
+/* LOGO ===========================
+.LOGO1 {
+    margin-top: 35px;
+    height: 74px;
+    width: 120px;
+    transition: all ease .5s;
+  }
+
+.LOGO1:hover {
+    opacity: .5;
+}
+  
+
+
+  .LOGOFOOTER {
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    display: block;
+  }
+  
+
+.NAME {
+
+  @media #{$brk-narrow}{
+    height: 143px;
+    width: 480px; }
+
+   @media #{$brk-small} {
+    height: 102px;
+    width: 340px;
+  }
+
+  @media #{$brk-xsmall} {
+    height: 102px;
+    width: 300px;
+  }   
+}
+
+
+
+
+
+/* LOGO END =========================== */

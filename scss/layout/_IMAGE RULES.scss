@@ -1,0 +1,367 @@
+
+/* IMAGE GRID RULES ============================*/
+
+
+
+
+
+
+/* INDEX IMAGE PAGE RULES ============================*/
+
+.EPCOVER {
+   left: 5%;
+   width: 42%; 
+   position: absolute;
+   margin-top: 5%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+   @media #{$brk-narrow} {
+      left: 10%;
+      width: 80%;
+      margin-top: 9%;
+      position: relative;
+  }
+}
+
+.EPTITLES, .EPTEXT {
+
+   left: 55%;
+   width: 32%;
+   color: black;
+   padding: 160px 0px 10px 0px;
+   text-align: center;
+   position: relative;
+
+   @media #{$brk-narrow} {
+      width: 100%;
+      left: 0%;
+      padding: 35px 0px 0px 0px;
+  }
+}
+
+
+.EPTITLES h2 {
+  color: #76603D;
+  font-family: "Josefin Sans";
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 40px;
+
+
+  @media #{$brk-fix} {
+    font-size: 26px;
+  }
+
+  @media #{$brk-wide} {
+    font-size: 31px;
+  }
+
+  @media #{$brk-narrow} {
+      color: #39cdfc;
+      font-size: 32px;
+  }
+}
+
+.EPTITLES h1 {
+  color: #F84406;
+  font-size: 45px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+
+  @media #{$brk-wide} {
+    font-size: 35px;
+  }
+
+  @media #{$brk-fix} {
+    font-size: 30px;
+  }
+
+  @media #{$brk-narrow} {
+    font-size: 40px;
+  }
+}
+
+
+.EPTEXT {
+   color: #FF3A10;
+   position: relative;
+   border: none;
+   padding: 0px 0px 10px 0px;
+}
+
+.EPTEXT h1 {
+  display: inline-block;
+  margin-top: 20px;
+  @media #{$brk-narrow} {
+    font-size: 18px;
+    margin-top: 0px;
+
+  }
+}
+
+
+.MBBIG {
+
+  @include outer-container(100%);
+
+  position: relative;
+     /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* END INDEX IMAGE PAGE RULES ============================*/
+
+
+
+
+
+
+/* MAIN IMAGE PAGE RULES ============================*/
+
+.title {
+  position: relative;
+  margin-top: 13%;
+  max-width: 100%;
+}
+
+.PINKMB {
+  margin: auto;
+  width: 40%;
+  display: block;
+}
+
+
+
+
+/* ABOUT BLOCK ============================*/
+
+.SQUIDBLOCK {
+  @include span-columns(6);
+}
+
+.SQUID {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 72%;
+  margin-left: 17%;
+}
+
+.ABOUTP {
+  @include span-columns(6);
+}
+
+.ABOUTP p {
+  width: 85%;
+  text-align: left;
+  margin-top: 15%;
+  margin-right: 20%;
+  font-size: 25px;
+  color: $color-brown;
+}
+
+/* ABOUT BLOCK END ============================*/
+
+
+
+
+
+
+/* AUDIO BLOCK ============================*/
+
+.COVER {
+  @include span-columns(6);
+}
+
+.MBCOVER {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  width: 57%;
+  margin-left: 30%;
+  margin-bottom: 6%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.PLAYER {
+  @include span-columns(6);
+  margin-top: 3%;
+}
+
+.PLAYER h1 {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: "Josefin Sans";
+}
+
+.PLAYER div {
+  width: 62%;
+}
+
+/*  AUDIO BLOCK END ============================*/
+
+
+
+
+
+
+/* SHOP BLOCK ============================*/
+
+.SHOPPIC {
+  @include span-columns(4);
+  display: inline-block;
+  margin-top: 2%;
+  margin-bottom: 9%;
+
+}
+
+.SHOPWRAP {
+  margin: 0px 8% 0px 8%; 
+}
+
+.SHOPBLOCK h1 {
+  @include span-columns(12);
+  text-align: center;
+  margin-top: 4%;
+  color: $color-brown;
+  font-size: 30px;
+}
+
+
+/* SHOP BLOCK ============================*/
+
+
+
+
+/* TWITTER BLOCK ============================*/
+
+.TWIT {
+ @include span-columns(7);
+ margin-top: 4%;
+
+}
+
+
+
+.BIRDBLOCK {
+  @include span-columns(4);
+
+}
+
+.BIRD {
+  height: 300px;
+  margin-top: 10%;
+  margin-left: 30%;
+}
+
+
+
+
+/* TWITTER BLOCK ============================*/
+
+
+
+
+
+/* CONTACT BLOCK ============================*/
+
+form {
+  @include span-columns(6);
+}
+
+.FORM1 {
+
+   margin-right: 17%;
+}
+
+.FORM0 {
+   margin-top: 10%;
+   margin-right: 17%;
+}
+
+.FORM0 input {
+  display: inline;
+  border-radius: 0;
+}
+
+textarea {
+  height: 150px;
+  border-radius: 0;
+}
+
+
+
+.SEND {
+  background-color: $color-brown;
+  color: white;
+  margin-bottom: 60px;
+  padding: 15px 70px;
+  border-radius: 0;
+}
+
+.SEND:hover {
+  background-color: white;
+  color: $color-brown;
+}
+
+
+
+
+.SOCIAL {
+  @include span-columns(6);
+
+}
+
+.SOCIALWRAP {
+  float: right;
+  margin-top: 9%;
+  display: inline-block;
+}
+
+.SOCIALWRAP a {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: solid 5px;
+  color: white;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.SOCIALICON {
+  margin-left: 35px;
+  margin-top: 35px;
+  height: 80px; 
+  width: 80px;
+  transition: transform .5s;
+}
+
+.SOCIALICON:hover {
+  transform: rotate(50deg);
+}
+
+
+
+
+
+
+/* CONTACT BLOCK END ============================*/
+
+
+
+
+
+
+
+

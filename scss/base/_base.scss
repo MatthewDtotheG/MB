@@ -1,0 +1,113 @@
+/* BASE */
+
+
+
+body,
+html {
+
+  color: $color-brown;
+  height: 100%;
+  margin: 0px;
+
+}
+
+
+
+.ENTER:hover {
+  color: #FF3A10;
+
+}
+
+.ENTER {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family:  sans-serif;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+
+
+a {
+  font-size: 30px;
+  color: black;
+  font-family:  sans-serif;
+}
+
+a:hover {
+  color: black;
+}
+
+ul {
+  word-spacing: 3px;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family:  sans-serif;
+}
+
+h1,
+a,
+h2 {
+  font-family:  sans-serif;
+  font-size: 20px;
+  color: #F84406;
+  margin-top: 10px;
+  
+
+  @media #{$brk-wide} {
+    font-size: 14px;
+  }
+
+  @media #{$brk-narrow} {
+    font-size: 18px;
+  }
+  
+}
+
+
+
+
+p {
+  text-align: center;
+  color: black;
+  font-size: 35px;
+  font-family: sans-serif;
+  
+}
+
+
+
+
+
+hr {
+  width: 45%;
+  height: 2px;
+  background-color: black;
+  margin: 80px auto;
+}
+
+
+
+
+
+button {
+  color: black;
+}
+
+
+
+footer {
+  @include span-columns(12);
+  background-color: $color-brown;
+  left: 0px;
+  bottom: 0px;
+  height: 250px;
+  width: 100%;
+  }
+
+
+

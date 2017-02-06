@@ -1,0 +1,55 @@
+/* BLINK ARROW =========================== 
+.blink-image {
+  margin-top: 8%;
+  width: 30px;
+
+  @media #{$brk-narrow} {
+    margin-top: 15%;
+    width: 25px; }
+
+  @media #{$brk-small} {
+    margin-top: 25%;
+    width: 25px; }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+
+@-ms-keyframes blink {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+
+@keyframes blink {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+.blink-image {
+  -moz-animation: blink normal 2s infinite ease-in-out;
+
+  -webkit-animation: blink normal 2s infinite ease-in-out;
+
+  -ms-animation: blink normal 2s infinite ease-in-out;
+
+  animation: blink normal 2s infinite ease-in-out;
+  /* Opera and prob css3 final iteration */ }
+
+/* BLINK ARROW  END=========================== */

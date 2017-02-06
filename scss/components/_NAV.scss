@@ -1,0 +1,59 @@
+/* NAV MENU */
+
+
+
+.MB {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: solid 3px;
+  position: fixed;
+  bottom: 58%;
+  right: 0;
+  padding-top: 3px;
+  margin-right: 33px;
+  margin-bottom: 46px;
+  padding-left: 3px;
+  font-size: 18px;
+  color: #76603D;
+}
+
+.MB:hover {
+  color: #76603D;
+}
+
+
+.HEADPHONES,
+.SHOP, .FRIEND {
+  right: 0;
+  margin-right: 35px;
+  margin-bottom: 46px;
+  height: 35px;
+  width: 35px;
+  position: fixed;
+}
+
+.HEADPHONES{
+  bottom: 50%;
+}
+
+.SHOP {
+  bottom: 42%;
+}
+
+.FRIEND {
+  bottom: 34%;
+}
+
+#NAV {
+  width: 35px;
+}
+
+
+
+/* NAV MENU END =========================== */
+
+
+
+
+
