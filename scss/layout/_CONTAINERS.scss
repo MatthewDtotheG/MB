@@ -7,8 +7,6 @@
 
 .NEW {
   @include outer-container(100%);
-
-
 }
 
 
@@ -34,7 +32,6 @@
 
 .TWITBLOCK {
   @include span-columns(12);
-  
   background-color: $color-white;
 }
 

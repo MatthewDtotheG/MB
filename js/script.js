@@ -11,7 +11,7 @@ $(function(){
 
       $('html, body').stop().animate({
           'scrollTop': $target.offset().top
-      }, 900, 'swing', function () {
+      }, 2000, 'swing', function () {
           window.location.hash = target;
       });
       
@@ -29,14 +29,14 @@ $(function(){
 
 $('#slider').rbtSlider({
 
-  height: '100vh',
+  'height': '100vh',
   // displays dots pagination
   'dots': false,
   // displayes arrows navigation
   'arrows': false,
   // autoplay interval
   // 3 = 3 seconds
-  'auto': 3
+  'auto': 2
 });
 
 
@@ -46,19 +46,16 @@ $('#slider').rbtSlider({
 
 // NAV +===========================
 
-$(document).scroll(function() {
-  var y = $(this).scrollTop();  
-  if (y > 700) {
-    $('#NAV').fadeIn();
-  } else {
-    $('#NAV').fadeOut();
-  }
-});
-
-/*
-
-*/
-
+$(document).ready(function(){  
+        $("#NAV").hide();                  
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 700) {
+                $('#NAV').fadeIn();
+            } else {
+                $('#NAV').fadeOut();
+            }
+        });
+    });
 
 // NAV  +===========================
 
@@ -69,6 +66,7 @@ $(document).scroll(function() {
 $(document).ready(function(){
 $(".audio-element").audioelement();
 });
+
 // SOUND MANAGER END +===========================
 
 
@@ -81,7 +79,7 @@ $(document).ready(function(){
    $('.tweet').twittie({
             username: 'mommasboykc',
             dateFormat: '%b. %d, %Y',
-            template: '{{tweet}} <div class="date">{{date}}</div> <a href="{{url}}" target="_blank">Details</a>',
+            template: '{{tweet}} <div class="date">{{date}}</div> <a href="{{url}}" target="_blank"></a>',
             count: 2,
             hideReplies: true
     });

@@ -1,0 +1,60 @@
+/* ABOUT BLOCK ============================*/
+
+.SQUIDBLOCK {
+  @include span-columns(5);
+
+  @media #{$brk-narrow} {
+      display: none;
+  }
+}
+
+.SQUID {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 72%;
+  margin-left: 15%;
+
+  @media #{$brk-narrow} {
+      margin-left: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+}
+
+.ABOUTP {
+  @include span-columns(7);
+
+  @media #{$brk-narrow} {
+  @include span-columns(12);
+       
+  }
+}
+
+.ABOUTP p {
+  text-align: left;
+  margin-top: 11%;
+  margin-bottom: 8%;
+  margin-right: 12%;
+  font-size: 30px;
+  font-weight: bold;
+  color: $color-brown;
+
+  @media #{$brk-narrow} {
+      text-align: left;
+      margin-right: 50px;
+      margin-left: 50px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-size: 17px;
+      line-height: 40px;
+      text-align: center;
+  }
+
+  @media #{$brk-small} {
+    text-align: center;
+
+  }
+
+}
+
+/* ABOUT BLOCK END ============================*/

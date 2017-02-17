@@ -3,6 +3,7 @@
 
 
 .MB {
+
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -13,13 +14,31 @@
   padding-top: 3px;
   margin-right: 33px;
   margin-bottom: 46px;
-  padding-left: 3px;
+  padding-left: 3.5px;
   font-size: 18px;
   color: #76603D;
+  transition: transform .5s;
+
+  @media #{$brk-fix} {
+    margin-right: 16px;
+  }
+
+  @media #{$brk-narrow} {
+    padding-left: 0px;
+    padding-top: 10px;
+    height: 55px;
+    width: 55px;
+    bottom: 61%;
+  }
 }
 
 .MB:hover {
   color: #76603D;
+  transform:translateX(-15px);
+
+   @media #{$brk-narrow} {
+    transform:translateX(0px);
+  }
 }
 
 
@@ -31,23 +50,61 @@
   height: 35px;
   width: 35px;
   position: fixed;
+  transition: transform .5s;
+
+  @media #{$brk-fix} {
+    margin-right: 18px;
+  }
+
+  @media #{$brk-narrow} {
+    margin-right: 43%;
+    height: 50px;
+    width: 50px;
+  }
+  
+}
+
+.HEADPHONES:hover, 
+.SHOP:hover,
+.FRIEND:hover {
+  transform:translateX(-15px);
+
+  @media #{$brk-narrow} {
+    transform:translateX(0px);
+  }
 }
 
 .HEADPHONES{
   bottom: 50%;
+
+
+   @media #{$brk-narrow} {
+    margin-right: 23%;
+    bottom: 60%;
+  }
 }
 
 .SHOP {
   bottom: 42%;
+
+   @media #{$brk-narrow} {
+    margin-right: 70%;
+    bottom: 34%;
+  }
 }
 
 .FRIEND {
   bottom: 34%;
+
+  @media #{$brk-narrow} {
+    margin-right: 23%;
+  }
 }
 
 #NAV {
   width: 35px;
 }
+
 
 
 

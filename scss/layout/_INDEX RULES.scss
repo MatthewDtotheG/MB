@@ -1,0 +1,204 @@
+
+
+
+
+/* INDEX IMAGE PAGE RULES ============================ */
+
+
+.MBBIG {
+
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.EPCOVER {
+
+   @include span-columns(5);
+   margin-top: 6%;
+   margin-left: 10%;
+   z-index: 99999;
+   position: relative;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+   @media #{$brk-narrow} {
+     @include span-columns(10);
+     margin-left: 8.5%;
+     
+  }
+
+  /*
+   @media #{$brk-narrow} {
+      left: 10%;
+      width: 80%;
+      margin-top: 9%;
+      position: relative;
+  }
+  */
+}
+
+
+
+.TEXTWRAP {
+  @include span-columns(5);
+  float: right;
+  margin-top: 15%;
+  z-index: 99999;
+
+  @media #{$brk-narrow} {
+     @include span-columns(12);
+     text-align: center;
+     margin-top: 5%;
+  }
+}
+
+
+
+.EPTITLES h1 {
+  color: #F84406;
+  font-size: 45px;
+  margin-bottom: 0px;
+  z-index: 99999;
+  position: relative;
+
+/*
+  @media #{$brk-wide} {
+    font-size: 35px;
+  }
+*/
+
+  @media #{$brk-fix} {
+    font-size: 36px;
+  }
+
+
+  @media #{$brk-narrow} {
+    font-size: 47px;
+  }
+
+  @media #{$brk-small} {
+    font-size: 40px;
+  }
+}
+
+
+.EPTITLES h2 {
+  color: #76603D;
+  font-family: "Josefin Sans";
+  font-size: 40px;
+  z-index: 99999;
+  position: relative;
+
+/*
+  @media #{$brk-wide} {
+    font-size: 31px;
+  }
+*/
+
+  @media #{$brk-fix} {
+    font-size: 32px;
+  }
+
+
+  @media #{$brk-narrow} {
+      color: #39cdfc;
+      font-size: 41px;
+      margin-bottom: 20px;
+  }
+
+  @media #{$brk-small} {
+    font-size: 32px;
+  }
+}
+
+
+
+
+.EPTEXT a,
+.EPTEXT div, {
+   color: #FF3A10;
+   font-size: 20px;
+   font-family:  sans-serif;
+   font-weight: bold;
+   z-index: 99999;
+   margin-bottom: 25px;
+   position: relative;
+   
+   @media #{$brk-fix} {
+    font-size: 15px;
+  }
+
+   @media #{$brk-narrow} {
+    font-size: 20px;
+  }
+
+   @media #{$brk-small} {
+    font-size: 17px;
+  }
+   
+}
+
+
+span {
+  margin: 5px;
+}
+
+.ENTER {
+  position: relative;
+  z-index: 99999;
+
+  @media #{$brk-narrow} {
+    padding-bottom: 50px;
+  }
+}
+
+
+
+
+
+/* END INDEX IMAGE PAGE RULES ============================*/
+
+
+
+
+
+
+/* IMAGE SLIDER PAGE RULES ============================*/
+
+.title {
+  max-width: 100%;
+
+}
+
+
+.PINKMB {
+  margin: auto;
+  top: 20%;
+  left: 26%;
+  position: absolute;
+  width: 45%;
+  display: block;
+  
+
+  @media #{$brk-small} {
+      width: 80%;
+      top: 20%;
+      left: 10%;
+  }
+}
+
+
+/* IMAGE SLIDER PAGE RULES END ============================*/
+
+
+

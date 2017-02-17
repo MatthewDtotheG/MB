@@ -1,0 +1,310 @@
+
+
+/* TWITTER BLOCK ============================*/
+
+
+.TWIT {
+ @include span-columns(8);
+ margin-top: 3%;
+ margin-bottom: 3%;
+ 
+ @media #{$brk-narrow} {
+     @include span-columns(8.5);
+  }
+
+@media #{$brk-small} {
+     @include span-columns(12);
+  }
+
+}
+
+.tweet ul {
+  font-size: 18px;
+  color: white;
+  margin-left: 6%;
+
+  @media #{$brk-narrow} {
+     font-size: 15px;
+     margin-left: 6%;
+  }
+
+  @media #{$brk-small} {
+   margin: auto;
+   padding: 0 4.5% 0 4.5%;
+  }
+}
+
+.tweet li {
+  margin-bottom: 15px;
+  background-color: $color-red;
+  padding: 8px 10px;
+  font-weight: bold;
+
+   @media #{$brk-narrow} {
+     padding: 5px 10px;
+     margin-bottom: 15px;
+  }
+}
+
+.tweet a {
+  color: white;
+  font-size: 18px;
+
+  @media #{$brk-narrow} {
+     font-size: 15px;
+  }
+
+}
+
+.HANDLEWRAP {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.HANDLE {
+  color: $color-brown;
+  display: inline-block;
+  margin: auto;
+  margin-top: 20px;
+  font-weight: bold;
+
+  @media #{$brk-narrow} {
+     font-size: 15px;
+     margin-top: 0px;
+     margin-bottom: 10px;
+  }
+  @media #{$brk-small} {
+     margin-bottom: 20px;
+  }
+}
+
+.TWITMB {
+  display: inline-block;
+  margin: auto;
+  margin-bottom: -10px;
+  height: 40px;
+  width: 40px;
+
+  @media #{$brk-narrow} {
+     height: 20px;
+     width: 20px;
+     margin-bottom: -5px;
+  }
+}
+
+
+.BIRDBLOCK {
+  @include span-columns(3);
+
+}
+
+.BIRD {
+  
+  position: relative;
+  height: 330px;
+  margin-top: -30px;
+  margin-left: 40%;
+
+@media #{$brk-maxwidth} {
+  position: relative;
+  height: 330px;
+  margin-top: -30px;
+  margin-left: 23%;
+  }
+
+@media #{$brk-narrow} {
+  height: 230px;
+  margin-top: 15px;
+  margin-left: 15%;
+  }
+
+@media #{$brk-small} {
+  display: none;
+  }
+
+}
+/* TWITTER BLOCK ============================*/
+
+
+
+
+/* CONTACT BLOCK ============================*/
+
+form {
+  @include span-columns(6);
+
+  @media #{$brk-small} {
+   @include span-columns(12);
+
+  }
+}
+
+.FORM1 {
+   margin-right: 17%;
+
+@media #{$brk-narrow} {
+   margin-right: 8%;
+  }
+@media #{$brk-small} {
+   margin: auto;
+   padding: 0 4.5% 0 4.5%;
+  }
+
+
+}
+
+.FORM0 {
+   margin-top: 10%;
+   margin-right: 17%;
+
+@media #{$brk-narrow} {
+   margin-right: 8%;
+  }
+@media #{$brk-small} {
+   margin: auto;
+   padding: 0 4.5% 0 4.5%;
+  }
+
+}
+
+.FORM0 input {
+  display: inline;
+  border-radius: 0;
+  color: $color-brown;
+}
+
+
+textarea {
+  height: 150px;
+  border-radius: 0;
+  color: $color-brown;
+}
+
+
+
+.SEND {
+  background-color: $color-brown;
+  color: white;
+  margin-bottom: 60px;
+  padding: 15px 70px;
+  border-radius: 0;
+  width: 100%;
+
+  @media #{$brk-small} {
+   margin-bottom: 100px;
+  }
+}
+
+.SEND:hover {
+  background-color: white;
+  color: $color-brown;
+}
+
+
+
+
+.SOCIAL {
+  @include span-columns(6);
+  display: inline-block;
+  padding: 0% 0% 0% 10%;
+
+  @media #{$brk-wide} {
+    padding: 4% 0% 0% 7%;
+  }
+
+  @media #{$brk-narrow} {
+    padding: 4% 0% 0% 17%;
+  }
+
+  @media #{$brk-small} {
+  @include span-columns(12);
+  padding: 0 4.5%;
+  margin: auto;
+  }
+}
+
+.SOCIAL div {
+  margin: auto;
+  display: inline-block;
+}
+
+.SOCIAL a {
+  margin-top: 15%;
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  border: solid 5px;
+  color: white;
+  display: inline-block;
+  transition: transform .5s;
+
+
+@media #{$brk-wide} {
+  height: 125px;
+  width: 125px;
+  display: inline-block;
+  margin-top: 5%;
+  margin-right: 0;
+  }
+
+
+@media #{$brk-narrow} {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-top: 5%;
+  margin-right: 0%;
+  }
+
+@media #{$brk-small} {
+  display: inline-block;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  
+  }
+}
+
+.SOCIAL a:hover {
+  transform: rotate(50deg);
+
+  @media #{$brk-narrow} {
+  transform: none;
+  }
+}
+
+.SOCIALICON {
+
+  margin-left: 35px;
+  margin-top: 35px;
+  height: 65px; 
+  width: 65px;
+ 
+@media #{$brk-wide} {
+  margin-left: 30px;
+  margin-top: 30px;
+  height: 55px; 
+  width: 55px;
+  }
+
+
+@media #{$brk-narrow} {
+  margin-left: 18px;
+  margin-top: 18px;
+  height: 55px; 
+  width: 55px;
+  }
+}
+
+
+
+
+
+
+/* CONTACT BLOCK END ============================*/
+
+
+

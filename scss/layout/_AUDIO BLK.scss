@@ -1,0 +1,120 @@
+/* AUDIO BLOCK ============================*/
+
+.COVER {
+  @include span-columns(4);
+  position: absolute;
+
+  @media #{$brk-narrow} {
+   position: relative;
+   @include span-columns(5);
+  }
+
+  @media #{$brk-small} {
+    position: relative;
+   @include span-columns(12);
+   
+  }
+}
+
+
+.MBCOVER {
+  margin-top: 6%;
+  margin-bottom: -6%;
+  margin-right: 10px;
+  margin-left: 47%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  @media #{$brk-narrow} {
+   margin-left: 30%;
+   margin-top: 8%;
+   margin-bottom: 8%;
+   display: block;
+  }
+
+  @media #{$brk-small} {
+   margin: auto;
+   margin-top: 5%;
+   width: 90%;
+   
+  }
+}
+
+.PLAYER {
+  @include span-columns(5);
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: 53%;
+  
+
+
+  @media #{$brk-narrow} {
+    margin-top: 4%;
+    margin-bottom: 3%;
+    margin-left: 0px;
+    float: right;
+
+  }
+
+  @media #{$brk-small} {
+    @include span-columns(12);
+    margin-top: 8%;
+    margin-bottom: 8%;
+    clear: left; 
+  }
+}
+
+
+.PLAYER h1 {
+  padding-left: 10px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: "Josefin Sans";
+
+
+  @media (max-width: 1040px) { 
+    font-size: 30px;
+
+  }
+
+
+  @media #{$brk-narrow} {
+    font-size: 25px;
+    
+  }
+
+  @media #{$brk-small} {
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 38px;
+    padding-left: 0px;
+  }
+}
+
+.AUDIO {  
+
+@media #{$brk-small} {
+  
+  }
+}
+
+.AUDIO div {
+  margin: auto;
+  display: block;
+  font-size: 17px;
+  
+  @media #{$brk-small} { 
+  margin-left: 10%;
+  width: 70%;
+  }
+}
+
+.audio-element > .__title {
+  
+   @media #{$brk-small} {
+    left: 90px;
+
+  }
+}
+
+/*  AUDIO BLOCK END ============================*/

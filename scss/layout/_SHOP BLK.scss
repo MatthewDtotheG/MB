@@ -1,0 +1,53 @@
+/* SHOP BLOCK ============================*/
+
+.SHOPPIC {
+  @include span-columns(4);
+  display: inline-block;
+  margin-top: 2%;
+  margin-bottom: 9%;
+
+  @media #{$brk-small} {
+      @include span-columns(12);
+  }
+
+}
+
+.SHOPWRAP {
+  margin: 0px 8% 0px 8%; 
+
+  @media #{$brk-narrow} {
+     margin: 0px 4% 0px 4%;
+  }
+
+  @media #{$brk-small} {
+     margin: 0px 4.5% 0px 4.5%;
+  }
+}
+
+.SHOPBLOCK h1 {
+  @include span-columns(12);
+  text-align: center;
+  margin-top: 23%;
+  margin-bottom: 0px;
+  color: $color-brown;
+  font-size: 30px;
+
+  @media #{$brk-maxwidth} {
+     margin-top: 12%;
+     
+  }
+
+
+  @media #{$brk-narrow} {
+     margin-top: 5%;
+     font-size: 17px;
+  }
+}
+
+
+/* SHOP BLOCK ============================*/ 
+
+
+
+
+

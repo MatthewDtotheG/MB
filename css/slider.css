@@ -8,8 +8,9 @@
 
 .slider {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .slItems {
@@ -20,6 +21,7 @@
 }
 
 .slItem {
+    background-position: center;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -54,7 +56,6 @@
     top: 50%;
     color: #fff;
     font-size: 85px;
-    font-weight: bold;
     margin-top: -42.5px;
     cursor: pointer;
 }

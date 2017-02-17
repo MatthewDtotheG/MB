@@ -4,24 +4,11 @@
 
 body,
 html {
-
   color: $color-brown;
   height: 100%;
   margin: 0px;
-
 }
 
-
-
-.ENTER:hover {
-  color: #FF3A10;
-
-}
-
-.ENTER {
-  margin-top: 40px;
-  font-weight: bold;
-}
 
 h2 {
   font-family:  sans-serif;
@@ -32,14 +19,16 @@ h2 {
 
 
 a {
-  font-size: 30px;
   color: black;
   font-family:  sans-serif;
+  z-index: 99999;
 }
 
+a:focus,
 a:hover {
-  color: black;
+  color: $color-brown;
 }
+
 
 ul {
   word-spacing: 3px;
@@ -53,22 +42,8 @@ h1,
 a,
 h2 {
   font-family:  sans-serif;
-  font-size: 20px;
   color: #F84406;
-  margin-top: 10px;
-  
-
-  @media #{$brk-wide} {
-    font-size: 14px;
-  }
-
-  @media #{$brk-narrow} {
-    font-size: 18px;
-  }
-  
 }
-
-
 
 
 p {
@@ -78,9 +53,6 @@ p {
   font-family: sans-serif;
   
 }
-
-
-
 
 
 hr {
@@ -107,7 +79,15 @@ footer {
   bottom: 0px;
   height: 250px;
   width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 110px;
+
+  @media #{$brk-small} {
+   height: 150px;
+   padding-top: 60px;
   }
+}
 
 
 
