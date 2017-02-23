@@ -9,7 +9,6 @@
     <meta property="og:url" content="http://mommasboy.co/" />
     <meta property="og:type" content="website" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Schoolbell|Josefin+Sans" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/audioelement.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link href="css/APPLICATION.css" rel="stylesheet" media="screen">
@@ -20,19 +19,31 @@
 
 <!-- <a href="#arrow" class="arrow"> > </a> -->
 
-<div class="slider" id="slider">
-  <div class="slItems">
-    <div class="slItem" style="background-image: url('img/0.jpg');">
-    </div>
 
-    <div class="slItem" style="background-image: url('img/1.jpg');">
-    </div>
-
-    <div class="slItem" style="background-image: url('img/2.jpg');">
-    </div>
-    <div class="slItem" style="background-image: url('img/3.jpg');">
-    </div>
-  </div>
+  <div id="slides">
+  <ul class="slides-container">
+    <li>
+      <img src="img/2.jpg" alt="">
+     
+    </li>
+    <li>
+      <img src="img/1.jpg" alt="">
+    
+    </li>
+    <li>
+      <img src="img/0.jpg" alt="">
+      
+    </li>
+    <li>
+      <img src="img/3.jpg" alt="">
+    
+    </li>
+    <li>
+      <img src="img/4.jpg" alt="">
+      
+    </li>
+  </ul>
+</div>
 
   <div class="title">
       <img class="PINKMB" src="img/PINKMB.png">
@@ -41,7 +52,6 @@
         </a>
   </div>
   
-</div>
 
 
 
@@ -206,7 +216,7 @@
         <div class="FORM1">
           MESSAGE*<br>
           <textarea id="message" name="message" class="MESSAGE" required></textarea><br>
-          <input class="SEND" type="submit" value="SUBMIT">
+          <input class="SEND" type="submit" value="SEND">
         </div>
       </form>
 
@@ -242,7 +252,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.runtime.min.js"></script>
 <script src="js/audioelement.js"></script>
-<script src="js/slider.js"></script>
+<script src="js/jquery.superslides.min.js"></script>
 <script src="js/tweetie.js"></script>
 <script src="js/script.js"></script>
 

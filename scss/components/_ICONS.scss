@@ -17,6 +17,7 @@
   transform: rotate(360deg);
   transition: all .5s ease-in-out;
   transform: translateY(0px) rotate(360deg);
+  z-index: 9999;
 
   @media #{$brk-narrow} {
   top: 85%;

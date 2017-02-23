@@ -26,17 +26,14 @@ $(function(){
 
 //ANCHOR TAGS END ===============================
 
+$(function () {
+  $('#slides').superslides({
+      play: 3000,
+      pagination: false,
+      hashchange: false
+  });
 
-$('#slider').rbtSlider({
 
-  'height': '100vh',
-  // displays dots pagination
-  'dots': false,
-  // displayes arrows navigation
-  'arrows': false,
-  // autoplay interval
-  // 3 = 3 seconds
-  'auto': 2
 });
 
 

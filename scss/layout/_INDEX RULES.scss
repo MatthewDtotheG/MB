@@ -188,7 +188,7 @@ span {
   position: absolute;
   width: 45%;
   display: block;
-  
+  z-index: 9999;
 
   @media #{$brk-small} {
       width: 80%;
