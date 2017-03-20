@@ -43,7 +43,6 @@ $(function () {
 
 // NAV +===========================
 
-$(document).ready(function(){  
         $("#NAV").hide();                  
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > 700) {
@@ -52,7 +51,7 @@ $(document).ready(function(){
                 $('#NAV').fadeOut();
             }
         });
-    });
+
 
 // NAV  +===========================
 
@@ -60,9 +59,9 @@ $(document).ready(function(){
 
 // SOUND MANAGER +===========================
 
-$(document).ready(function(){
+
 $(".audio-element").audioelement();
-});
+
 
 // SOUND MANAGER END +===========================
 
@@ -72,7 +71,7 @@ $(".audio-element").audioelement();
 
 
 
-$(document).ready(function(){
+
    $('.tweet').twittie({
             username: 'mommasboykc',
             dateFormat: '%b. %d, %Y',
@@ -80,7 +79,7 @@ $(document).ready(function(){
             count: 2,
             hideReplies: true
     });
-});
+
 
 // TWITTER  END ===============================
 
@@ -91,11 +90,11 @@ $(document).ready(function(){
 // COLLAPSIBLE NAV MENU ===============================
 
 
-$(document).ready(function(){
-  $('#nav-icon3').click(function(){
+
+$('#nav-icon3').click(function(){
     $(this).toggleClass('open');
   });
-});
+
 
 $('#nav-icon3').click(function() {
     $('#NAVMENU').fadeToggle(300);
